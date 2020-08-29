@@ -5,7 +5,7 @@ export default {
     async fetchCategoties ({ commit, dispatch }) {
       try {
         const uid = await dispatch('getUid')
-        const categories = (await firebase.database().ref(`/users/${uid}/categories`).once('value')).val() || []
+        const categories = (await firebase.database().ref(`/users/${uid}/categories`).once('value')).val() || {}
 
         // const cats = []
         // Object.keys(categories).forEach(key => {
