@@ -40,7 +40,7 @@ export default {
   props: {
     records: {
       required: true,
-      type: Object
+      type: Array
     }
   },
   components: {
