@@ -32,6 +32,11 @@ import { mapGetters } from 'vuex'
 import currencyFilter from '@/filters/currency.filter'
 export default {
   name: 'planning',
+  metaInfo () {
+    return {
+      title: this.$title('Menu_Planning')
+    }
+  },
   data: () => ({
     loading: true,
     categories: []

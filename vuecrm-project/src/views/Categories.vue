@@ -24,6 +24,11 @@ export default {
     CategoryCreate,
     CategoryEdit
   },
+  metaInfo () {
+    return {
+      title: this.$title('Menu_Categories')
+    }
+  },
   data: () => ({
     categories: [],
     loading: true,

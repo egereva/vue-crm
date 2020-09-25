@@ -34,6 +34,11 @@ export default {
   name: 'history',
   mixins: [paginationMixin],
   extends: Pie,
+  metaInfo () {
+    return {
+      title: this.$title('Menu_History')
+    }
+  },
   data: () => ({
     loading: true,
     records: []
